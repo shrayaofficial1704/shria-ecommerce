@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Install Shria Dependencies",
+      "type": "shell",
+      "command": "npm.cmd",
+      "args": ["run", "install:all"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Start Shria Full Stack",
+      "type": "shell",
+      "command": "cmd.exe",
+      "args": ["/c", "start-local.cmd"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "panel": "dedicated",
+        "reveal": "always",
+        "clear": true
+      }
+    }
+  ]
+}
